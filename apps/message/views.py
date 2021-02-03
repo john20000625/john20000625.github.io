@@ -27,20 +27,15 @@ def showform(request):
     })
 
 def hello(request):
-    #print("index")
-    print("：")
     print(os.getcwd())
     return render(request,'index.html')
 
 def hi(request):
-    #print("page")
-    print("：")
-    print(os.getcwd())
+    print("page")
     return render(request,'page.html')
 
 def home_view(request):
-    print("：")
-    print(os.getcwd())
+    print("home")
     #post_list = Thing.objects.all()  #获取全部的Article对象
     #return render(request, 'index.html', {'post_list' : post_list})
     return render(request,'index.html')

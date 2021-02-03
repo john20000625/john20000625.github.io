@@ -20,10 +20,9 @@ from message import views
 
 urlpatterns = [
     path(r'admin/', admin.site.urls),
-    path(r'^$', views.home_view, name='home'),
+    #path(r'^$', views.home_view, name='home'),
     path('',views.hello),
-    path(r'page/',views.hi),
+    path(r'page/',views.hi,name='page'),
     path(r'form/', views.submitform, name='formUrl'),
     path(r'showform/', views.showform, name='showformUrl'),
 ]
-#1
